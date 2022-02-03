@@ -28,9 +28,11 @@ jobs:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
       - run:
+          app-dir:
           name: Install npm
           command: cd Flowology && npm install
       - run:
+          app-dir:
           name: Run tests
           command: cd Flowology && npm test
 
