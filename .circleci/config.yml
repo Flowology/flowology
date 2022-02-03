@@ -28,13 +28,11 @@ jobs:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
       - run:
-          app-dir: ~/Flowology
           name: Install npm
-          command: npm install
+          command: cd Flowology && npm install
       - run:
-          app-dir: ~/Flowology
           name: Run tests
-          command: npm test
+          command: cd Flowology && npm test
 
 workflows:
   # Below is the definition of your workflow.
