@@ -27,7 +27,10 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-      - run: npm install
+      - run:
+          app-dir: ~/Flowology
+          name: Install npm
+          command: npm install
       - run:
           app-dir: ~/Flowology
           name: Run tests
