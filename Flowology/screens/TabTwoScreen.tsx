@@ -26,36 +26,38 @@ export default function TabTwoScreen() {
     setPitch(newPitch);
   };
 
-  const renderPaceSlider = () => (
-    <View style={styles.sliderContainer}>
-      <Text style={styles.sliderLabel}>{`Speed: ${speed.toFixed(2)}`}</Text>
-      <Slider
-        style={styles.slider}
-        minimumValue={0.01}
-        maximumValue={1.0}
-        value={speed}
-        onValueChange={updateRate}
-      />
-    </View>
-  );
-
-  const renderPitchSlider = () => (
-    <View style={styles.sliderContainer}>
-      <Text style={styles.sliderLabel}>{`Pitch: ${pitch.toFixed(2)}`}</Text>
-      <Slider
-        style={styles.slider}
-        minimumValue={0.01}
-        maximumValue={2.0}
-        value={pitch}
-        onValueChange={updatePitch}
-      />
-    </View>
-  );
-
-  const listAllVoiceOptions = async () => {
-    let voices = Speech.getAvailableVoicesAsync();
-    console.log(voices);
+  const SLIDER_CONFIG = {
+    rate: {
+      title: `Speed: ${speed.toFixed(2)}`,
+      maximumValue: 1.0,
+      value: speed,
+      onValueChange: updateRate
+    },
+    pitch: {
+      title: `Pitch: ${pitch.toFixed(2)}`,
+      maximumValue: 2.0,
+      value: pitch,
+      onValueChange: updatePitch
+    }
   };
+
+  const renderSliders = () =>
+    Object.entries(SLIDER_CONFIG).map((slider: any, index: any) => {
+      let currKey = Object.keys(SLIDER_CONFIG)[index];
+      let isPitch = currKey == "pitch";
+      return (
+        <View style={styles.sliderContainer}>
+          <Text style={styles.sliderLabel}>{`Pitch: ${pitch.toFixed(2)}`}</Text>
+          <Slider
+            style={styles.slider}
+            minimumValue={0.01}
+            maximumValue={isPitch ? 2.0 : 1.0}
+            value={isPitch ? pitch : speed}
+            onValueChange={isPitch ? updatePitch : updateRate}
+          />
+        </View>
+      );
+    });
 
   return (
     <View style={styles.container}>
@@ -73,8 +75,7 @@ export default function TabTwoScreen() {
         value={inputText}
         placeholder={"Enter a sentence you want read aloud."}
       />
-      {renderPaceSlider()}
-      {renderPitchSlider()}
+      {renderSliders()}
 
       <Button title="Speak" onPress={speakText} />
     </View>
