@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -17,14 +15,14 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -48,8 +46,6 @@
     <a href="https://github.com/Flowology/flowology/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,35 +73,31 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-* [Flowology Rationale](https://docs.google.com/presentation/d/1K7ArTw4RV7p-OSISXqzPZpdsKQ7S81N0/edit#slide=id.p5)
+
+- [Flowology Rationale](https://docs.google.com/presentation/d/1K7ArTw4RV7p-OSISXqzPZpdsKQ7S81N0/edit#slide=id.p5)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-* [ReactNative](https://reactnative.dev/)
+- [ReactNative](https://reactnative.dev/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Node.js
 
 ### Installation
 
@@ -118,20 +110,26 @@ To get a local copy up and running follow these simple example steps.
    npm install
    ```
 
+### To Run Locally
+
+1. `npm start` to start the local environment
+
+2. To run on:
+   -  the web, type in `w`
+   - an android simulator, type in `a`
+   - an iOS simulator, type in `i`
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 <!-- ## Roadmap
@@ -145,9 +143,8 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -156,32 +153,28 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/amazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+4. Push to the Branch (`git push origin feature/amazingFeature`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
-Distributed under the  GPL-3.0 License. See `LICENSE.txt` for more information.
+Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Helen Gezahegn - [LinkedIn](https://linkedin.com/in/helengezahegn) - gezahegn@ualberta.ca
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 <!-- ## Acknowledgments
@@ -193,9 +186,9 @@ Helen Gezahegn - [LinkedIn](https://linkedin.com/in/helengezahegn) - gezahegn@ua
 <p align="right">(<a href="#top">back to top</a>)</p>
  -->
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Flowology/flowology.svg?style=for-the-badge
 [contributors-url]: https://github.com/Flowology/flowology/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Flowology/flowology.svg?style=for-the-badge
@@ -206,6 +199,7 @@ Helen Gezahegn - [LinkedIn](https://linkedin.com/in/helengezahegn) - gezahegn@ua
 [issues-url]: https://github.com/Flowology/flowology/issues
 [license-shield]: https://img.shields.io/github/license/Flowology/flowology.svg?style=for-the-badge
 [license-url]: https://github.com/Flowology/flowology/blob/master/LICENSE.txt
+
 <!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username -->
 <!-- [product-screenshot]:  -->
